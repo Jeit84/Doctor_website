@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#063b7b">
+  <title>SARIFUJJAMAN Physiotherapy & Rehabilitation Center</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="toast" class="toast"></div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home">
+        <span class="brand-mark">✚</span>
+        <span>
+          <strong>Dr. SARIFUJJAMAN</strong>
+          <small>Physiotherapy & Rehabilitation Center</small>
+        </span>
+      </a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Patient Portal</a>
+        <a href="#doctor">Doctor Portal</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-login" onclick="openLogin()">Login ▾</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">MOVE BETTER &nbsp;•&nbsp; LIVE STRONGER</div>
+        <h1>Dr. SARIFUJJAMAN</h1>
+        <h2>Physiotherapy &<br>Rehabilitation Center</h2>
+        <p>Personalized care for pain, mobility and recovery. Get your token online, visit the clinic and move toward a healthier life.</p>
+
+        <div class="facts">
+          <div><b>₹250</b><span>Consultation Fee</span></div>
+          <div><b>8 AM – 12 PM</b><span>Morning</span><b>4 PM – 8 PM</b><span>Evening</span></div>
+          <div><b>📍</b><span>Sonapur Road, Kariali Bazar,<br>Bhaluka Road, West Bengal, India</span></div>
+        </div>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="openLogin('patient')">👤 Patient Login →</button>
+          <button class="btn btn-green" onclick="openLogin('doctor')">🩺 Doctor Login →</button>
+        </div>
+      </div>
+      <div class="hero-doctor">
+        <div class="doctor-glow"></div>
+        <img src="/assets/doctor.jpg" alt="Dr. SARIFUJJAMAN">
+        <div class="hero-badge">Better Movement<br><strong>Better Life</strong></div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading">
+        <span>OUR SERVICES</span>
+        <h2>Care focused on helping you move better</h2>
+      </div>
+      <div class="service-grid">
+        <article><div class="service-icon">♿</div><h3>Pain Relief</h3><p>Support for common pain and mobility concerns.</p></article>
+        <article><div class="service-icon">🦴</div><h3>Joint Care</h3><p>Movement-focused rehabilitation for stronger joints.</p></article>
+        <article><div class="service-icon">🧍</div><h3>Post-Injury Rehab</h3><p>Guided recovery and functional rehabilitation.</p></article>
+        <article><div class="service-icon">🏃</div><h3>Therapeutic Exercise</h3><p>Exercise-based support for strength and mobility.</p></article>
+        <article><div class="service-icon">🧘</div><h3>Posture Correction</h3><p>Practical movement and posture guidance.</p></article>
+      </div>
+    </section>
+
+    <section id="booking" class="workflow section">
+      <div class="patient-panel">
+        <div class="section-heading left">
+          <span>PATIENT PORTAL</span>
+          <h2>Book your visit in a few simple steps</h2>
+        </div>
+        <div class="steps">
+          <div><span>1</span><b>Create / Login</b><small>Use your mobile number</small></div>
+          <div><span>2</span><b>Tell your issue</b><small>Describe your problem</small></div>
+          <div><span>3</span><b>Get your token</b><small>Number is generated automatically</small></div>
+          <div><span>4</span><b>Visit clinic</b><small>Follow your token order</small></div>
+        </div>
+        <button class="btn btn-green wide" onclick="openLogin('patient')">Start Patient Booking →</button>
+      </div>
+
+      <div class="payment-card">
+        <div class="section-heading left">
+          <span>PAYMENT</span>
+          <h2>Scan & Pay</h2>
+        </div>
+        <p>Consultation fee: <strong>₹250</strong></p>
+        <div class="qr-box"><img src="/assets/payment-qr.jpg" alt="Clinic payment QR"></div>
+        <small>Payment QR supplied by the clinic. Payment status can be updated by the doctor after verification.</small>
+      </div>
+    </section>
+
+    <section class="doctor-showcase section">
+      <div>
+        <span class="eyebrow">DOCTOR SECTION</span>
+        <h2>Doctor dashboard for patient queue & timings</h2>
+        <p>The doctor can log in to view all booked patients, their issues, token numbers, appointment timing and payment status. The list is automatically ordered by date, token and booking time.</p>
+        <button class="btn btn-primary" onclick="openLogin('doctor')">Open Doctor Portal →</button>
+      </div>
+      <img src="/assets/doctor.jpg" alt="SARIFUJJAMAN">
+    </section>
+
+    <section id="doctor" class="section portal-preview">
+      <div class="section-heading">
+        <span>LIVE QUEUE</span>
+        <h2>Ascending token system</h2>
+        <p>Each date starts from T-001. New bookings receive the next available number for that date.</p>
+      </div>
+      <div class="queue-example">
+        <div><b>T-001</b><span>First booking</span></div>
+        <div><b>T-002</b><span>Next booking</span></div>
+        <div><b>T-003</b><span>Next booking</span></div>
+        <div><b>T-004</b><span>And so on…</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div>
+        <span class="eyebrow">CONTACT</span>
+        <h2>SARIFUJJAMAN Physiotherapy & Rehabilitation Center</h2>
+        <p>📍 Sonapur Road, Kariali Bazar, Bhaluka Road, West Bengal, India</p>
+        <p>🕐 8:00 AM – 12:00 PM &nbsp; | &nbsp; 4:00 PM – 8:00 PM</p>
+      </div>
+      <div class="live-clock">
+        <small>LIVE CLINIC CLOCK</small>
+        <strong id="liveClock">--:--:--</strong>
+        <span>India Standard Time (IST)</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><b>SARIFUJJAMAN</b><span>Physiotherapy & Rehabilitation Center</span></div>
+    <div>₹250 Consultation · Online Token · Doctor Portal</div>
+  </footer>
+
+  <!-- Auth modal -->
+  <div class="modal" id="authModal">
+    <div class="modal-card">
+      <button class="close" onclick="closeModal('authModal')">×</button>
+      <div class="tabs">
+        <button id="patientTab" class="active" onclick="switchAuth('patient')">Patient</button>
+        <button id="doctorTab" onclick="switchAuth('doctor')">Doctor</button>
+      </div>
+
+      <div id="patientAuth">
+        <div class="auth-switch">
+          <button class="mini active" id="pLoginBtn" onclick="patientAuthMode('login')">Login</button>
+          <button class="mini" id="pRegisterBtn" onclick="patientAuthMode('register')">Create account</button>
+        </div>
+
+        <form id="patientLoginForm" onsubmit="patientLogin(event)">
+          <h2>Patient Login</h2>
+          <label>Mobile Number<input id="loginPhone" maxlength="10" required placeholder="10-digit mobile number"></label>
+          <label>Password<input id="loginPassword" type="password" required placeholder="Your password"></label>
+          <button class="btn btn-primary wide">Login & Continue</button>
+        </form>
+
+        <form id="patientRegisterForm" class="hidden" onsubmit="patientRegister(event)">
+          <h2>Create Patient Account</h2>
+          <label>Full Name<input id="regName" required placeholder="Patient name"></label>
+          <label>Mobile Number<input id="regPhone" maxlength="10" required placeholder="10-digit mobile number"></label>
+          <label>Password<input id="regPassword" type="password" minlength="6" required placeholder="At least 6 characters"></label>
+          <button class="btn btn-green wide">Create Account</button>
+        </form>
+      </div>
+
+      <form id="doctorAuth" class="hidden" onsubmit="doctorLogin(event)">
+        <h2>Doctor Login</h2>
+        <label>Username<input id="doctorUsername" value="doctor" required></label>
+        <label>Password<input id="doctorPassword" type="password" required placeholder="Doctor password"></label>
+        <button class="btn btn-green wide">Open Doctor Dashboard</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Patient portal -->
+  <div class="modal" id="patientModal">
+    <div class="modal-card wide-card">
+      <button class="close" onclick="closeModal('patientModal')">×</button>
+      <div class="portal-header">
+        <div><span class="eyebrow">PATIENT PORTAL</span><h2 id="patientWelcome">Welcome</h2></div>
+        <button class="link-btn" onclick="patientLogout()">Logout</button>
+      </div>
+
+      <div class="booking-layout">
+        <form onsubmit="bookAppointment(event)" class="booking-form">
+          <h3>Book a Token</h3>
+          <label>Appointment Date<input type="date" id="appointmentDate" required></label>
+          <label>Clinic Timing
+            <select id="appointmentSlot" required>
+              <option value="8:00 AM - 12:00 PM">8:00 AM – 12:00 PM</option>
+              <option value="4:00 PM - 8:00 PM">4:00 PM – 8:00 PM</option>
+            </select>
+          </label>
+          <label>Tell us about your issue
+            <textarea id="issue" required minlength="3" rows="6" placeholder="Example: knee pain after injury, back pain, difficulty walking..."></textarea>
+          </label>
+          <div class="fee-line"><span>Consultation Fee</span><b>₹250</b></div>
+          <div class="booking-payment">
+            <h4>Payment Option</h4>
+            <label class="payment-choice"><input type="radio" name="paymentMethod" value="Online" onchange="toggleBookingPayment()" checked> <span><b>Pay Online – ₹250</b><small>Scan the clinic QR below</small></span></label>
+            <label class="payment-choice"><input type="radio" name="paymentMethod" value="Clinic" onchange="toggleBookingPayment()"> <span><b>Book at Clinic</b><small>Pay ₹250 at the clinic counter</small></span></label>
+            <div id="bookingQrWrap" class="booking-qr">
+              <img src="/assets/payment-qr.jpg" alt="Clinic payment QR">
+              <div><b>Scan & Pay ₹250</b><small>After payment, keep the transaction screenshot/ID. The clinic will verify it.</small></div>
+            </div>
+            <div id="clinicPayNote" class="clinic-pay-note hidden">🏥 <b>Book at Clinic selected.</b> Your token will be generated now and payment will be ₹250 at the clinic.</div>
+          </div>
+          <button class="btn btn-green wide">Generate My Token →</button>
+        </form>
+
+        <div class="my-appointments">
+          <h3>My Tokens</h3>
+          <div id="patientAppointments"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Doctor dashboard -->
+  <div class="modal" id="doctorModal">
+    <div class="modal-card dashboard-card">
+      <button class="close" onclick="closeModal('doctorModal')">×</button>
+      <div class="portal-header">
+        <div><span class="eyebrow">DOCTOR PORTAL</span><h2>Patient Queue & Database</h2></div>
+        <div class="header-actions">
+          <button class="btn small" onclick="downloadCSV()">⬇ Export Sheet</button>
+          <button class="link-btn" onclick="doctorLogout()">Logout</button>
+        </div>
+      </div>
+
+      <div class="dashboard-tools">
+        <label>View date<input type="date" id="doctorDate" onchange="loadDoctorAppointments()"></label>
+        <button class="btn btn-primary" onclick="document.getElementById('doctorDate').value='';loadDoctorAppointments()">All Dates</button>
+        <button class="btn btn-green" onclick="loadDoctorAppointments()">Refresh</button>
+      </div>
+
+      <div class="stats" id="doctorStats"></div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th><th>Token</th><th>Patient</th><th>Mobile</th><th>Issue</th><th>Timing</th><th>Booked At</th><th>Payment</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="doctorTableBody"></tbody>
+        </table>
+      </div>
+      <p class="privacy-note">Patient information is stored in the clinic SQLite database on the server and is visible only through authenticated portal access.</p>
+    </div>
+  </div>
+
+  <!-- Ticket modal -->
+  <div class="modal" id="ticketModal">
+    <div class="modal-card ticket-card" id="ticketContent"></div>
+  </div>
+
+<script src="/app.js?v=20260924fix"></script>
+</body>
+</html>
